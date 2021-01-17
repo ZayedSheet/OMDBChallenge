@@ -1,0 +1,9 @@
+#app-bar{
+  margin: auto 5%;
+  width: 100%;
+  padding: 20px 0;
+}
+
+#app-bar > h1 {
+  font-size: 30px;
+} 
