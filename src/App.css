@@ -1,3 +1,29 @@
 *{
   font-family: ShopifySans;
 }
+
+body{
+  background-color: white;
+}
+
+.app-body{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 2% 5%;
+}
+
+.search{
+  width: 100%;
+  grid-column: 1 / 3;
+}
+
+.Polaris-Page{
+  margin: 0px;
+  padding: 0px;
+}
+
+.Polaris-Card{
+  margin: 0px;
+  padding: 0px;
+}
