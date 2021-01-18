@@ -50,7 +50,7 @@ export default function SearchBar() {
   return (
     <div className="search">
       <div className="search-bar" onKeyDown={handleKeyPress}>
-        <h1 className="search-title">Search for and Nominate your favorite movies!</h1>
+        <h1 className="search-title">Search for and nominate your favorite movies!</h1>
         {textField}
       </div>
     </div>

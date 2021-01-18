@@ -24,7 +24,7 @@ export default function ResultsList() {
 
   return(
     <div className="movie-list">
-      <Page title={`Results for "${search}"`} separator>
+      <Page title={search ? `Search Results for "${search}"` : `Search Results` } separator>
         {results &&
           results.map((movie)=> {
             return(
