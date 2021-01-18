@@ -1,6 +1,6 @@
 import React, {useCallback, useState} from 'react';
 import {useDataProvider} from 'DataStore/DataProvider';
-import {Icon, TextField} from '@shopify/polaris';
+import {Icon, TextField, Button} from '@shopify/polaris';
 import {SearchMinor} from '@shopify/polaris-icons';
 import search from './search';
 
@@ -40,17 +40,17 @@ export default function SearchBar() {
   const textField = (
     <TextField
       onChange={handleTextFieldChange}
-      label="Search"
       value={textFieldValue}
       prefix={<Icon source={SearchMinor} color="inkLighter" />}
       placeholder="Search"
-      helpText="Search for your favorite movies and shows!"
+      helpText="Type in a movie and click enter to search"
     />
   );
 
   return (
     <div className="search">
       <div className="search-bar" onKeyDown={handleKeyPress}>
+        <h1 className="search-title">Search for and Nominate your favorite movies!</h1>
         {textField}
       </div>
     </div>
