@@ -23,14 +23,16 @@ export default function ResultsList() {
   const action = (movieId, movie) => <Button disabled={isNominated(movieId)} primary onClick={() => nominateMovie(movie)}>Nominate</Button>;
 
   return(
-    <Page title={`Search results for: ${search}`} separator>
-      {results &&
-        results.map((movie)=> {
-          return(
-            <MovieCard key={movie.imdbID} movie={movie} button={action(movie.imdbID, movie)}></MovieCard>
-          );
-        })
-      }
-    </Page>
+    <div className="movie-list">
+      <Page title={`Search results for: ${search}`} separator>
+        {results &&
+          results.map((movie)=> {
+            return(
+              <MovieCard key={movie.imdbID} movie={movie} button={action(movie.imdbID, movie)}></MovieCard>
+            );
+          })
+        }
+      </Page>
+    </div>
   );
 }

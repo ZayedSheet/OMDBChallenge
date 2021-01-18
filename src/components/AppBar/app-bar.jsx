@@ -6,7 +6,7 @@ export default function AppBar() {
   return (
     <div id="app-bar">
       <h1>
-        The Shoppies
+        <b>The Shoppies</b>
       </h1>
     </div>
   );

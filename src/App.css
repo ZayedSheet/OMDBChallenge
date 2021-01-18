@@ -1,9 +1,5 @@
-*{
-  /* font-family: ShopifySans; */
-}
-
 body{
-  background-color: white;
+  background-color: #F4F6F8;
 }
 
 .app-body{
@@ -20,7 +16,11 @@ body{
 
 .Polaris-Page{
   margin: 0px;
-  padding: 0px;
+  padding: 10px;
+}
+
+.movie-list{
+  background-color: white;
 }
 
 .Polaris-Card{
