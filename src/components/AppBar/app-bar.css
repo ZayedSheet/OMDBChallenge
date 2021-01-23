@@ -1,7 +1,9 @@
 #app-bar{
-  margin: auto 5%;
   width: 100%;
-  padding: 20px 0;
+  padding: 0 5%;
+  height: 8%;
+  display: flex;
+  align-items: center;
 }
 
 #app-bar > h1 {
