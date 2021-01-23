@@ -28,12 +28,17 @@ export default function SearchBar() {
   }
 
   const handleSearch = async () => {
-    const searchResults = await search(textFieldValue);
+    if(textFieldValue){
+      const searchResults = await search(textFieldValue);
 
-    const filteredResults = searchResults.data.Search.filter((movie) => movie.Type === "movie");
+      const filteredResults = searchResults.data.Search.filter((movie) => movie.Type === "movie");
 
-    searchStore.setSearch(textFieldValue);
-    searchStore.setResults(filteredResults);
+      searchStore.setResults(filteredResults);
+      searchStore.setSearch(textFieldValue);
+    } else {
+      searchStore.setResults([]);
+      searchStore.setSearch("");
+    }
   }
 
 
